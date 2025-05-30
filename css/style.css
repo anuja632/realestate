@@ -1,0 +1,446 @@
+/* Base Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/image/1.jpg') center center / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Form Box */
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  color: #333;
+  width: 400px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* intl-tel-input styling */
+.input-wrapper {
+  position: relative;
+}
+
+
+.iti__flag {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+}
+
+/* Add padding-left to input to avoid overlapping flag and dial code */
+#phone {
+  padding-left: 6rem !important;
+}
+
+/* Floating label moves correctly */
+.form-floating > input#phone:not(:focus):placeholder-shown + label {
+  padding-left: 6rem;
+}
+
+/* Input shadow */
+.input-shadow {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  transition: box-shadow 0.3s ease;
+}
+
+.input-shadow:focus {
+  box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Adjust dropdown z-index */
+.iti__country-list {
+  z-index: 1050;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 3;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  text-transform: none;
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #222;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-cards .card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  flex: 1 1 300px;
+  max-width: 340px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-cards .card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 10px rgba(134, 239, 239, 0.5),
+    0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.3),
+    0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.service-cards .card h3 {
+  font-size: 1.6rem;
+  margin: 15px 0 12px;
+  font-weight: 600;
+}
+
+.service-cards .card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+
+.card:hover .service-icon {
+  transform: rotateY(180deg);
+}
+
+/* Container and Section */
+.space {
+  padding: 60px 20px;
+}
+
+.bg-theme2 {
+  background-color: #f8f9fa !important;
+}
+
+/* Title Area */
+.title-area {
+  margin-bottom: 50px;
+}
+
+.title-area .sec-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-area .sec-line hr {
+  width: 60px;
+  height: 3px;
+  background-color: #00e676;
+  border: none;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.title-area .sec-subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 8px;
+}
+
+/* Row and Filters */
+.row.justify-content-center {
+  gap: 30px;
+}
+
+/* Property Card */
+.propertie-style1 {
+  background: #fff;
+  border-radius: 12px;
+box-shadow: 1.5px 2.598px 14.88px 1.12px rgba(116, 117, 117, 0.1);  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.propertie-style1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+.propertie-img img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 220px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Content */
+.propertie-content {
+  padding: 20px 18px;
+}
+
+.propertie-name {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Bottom section with icons */
+.propertie-bottom {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Icon Buttons */
+.icon-btn.style2 {
+  width: 42px;
+  height: 42px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+/* WhatsApp icon color on hover */
+.icon-btn.style2:hover {
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+}
+
+/* Call icon different hover color */
+.icon-btn.style2.phone:hover {
+  background-color: #007bff; /* Blue color for phone */
+  color: white;
+}
+
+
+.service-cards .card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.filter-item {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Responsive: 2 cards per row on medium screens */
+@media (max-width: 992px) {
+  .filter-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Responsive: 1 card per row on small/mobile screens */
+@media (max-width: 576px) {
+  .filter-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+    padding: 60px 15px;
+  }
+  .form-box {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .listing {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .listing {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+.listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.cards {
+  position: relative;
+  height: 200px;
+  width:350px;
+  border-radius: 12px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: orange;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cards h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cards p {
+  font-size: 14px;
+}
+    .section-title {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 24px;
+    }
+
+    .section-title span {
+      color: orange;
+      font-weight: bold;
+    }
+        .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .facility-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      padding: 15px;
+      border-radius: 10px;
+    
+      text-align: center;
+    }
+
+
+
+    .facility-icon {
+      width: 50px;
+      height: 50px;
+      background: #ffe5cc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .facility-text {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .facility-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
