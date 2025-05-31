@@ -18,6 +18,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
   <!-- Include CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/css/intlTelInput.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+
 
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -50,6 +52,9 @@
 
 
 <!-- Right Form -->
+<!-- Add this to your <head> if not already included -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-duration="1000">
   <div class="form-box shadow p-4 rounded-4 bg-white">
     <h4 class="mb-4 text-center fw-bold">
@@ -57,7 +62,13 @@
       <span class="text" style="color: #F68E20;">5 Minutes!</span>
     </h4>
 
-    <form>
+    <form action="https://formsubmit.co/jayanthi@highgainrealestate.com" method="POST">
+      <!-- Hidden FormSubmit Settings -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New Real Estate Callback Request" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://highgainrealestate.com/thank-you.html" />
+
       <!-- Full Name -->
       <div class="form-floating mb-3 input-wrapper">
         <input
@@ -68,9 +79,7 @@
           placeholder="Your Full Name"
           required
         />
-        <label for="fullName">
-          <i class="fas fa-user me-2 text-muted"></i>Full Name
-        </label>
+        <label for="fullName"><i class="fas fa-user me-2 text-muted"></i>Full Name</label>
       </div>
 
       <!-- Phone Number -->
@@ -79,16 +88,12 @@
           type="tel"
           class="form-control rounded-3 input-shadow"
           id="mobile_intro"
-          name="mobile_intro"
+          name="phone"
           placeholder="Phone Number"
           autocomplete="off"
           required
-          style="padding-left: 4.5rem;"
         />
-        <label for="mobile_intro">
-          <i class="fas fa-phone me-2 text-muted"></i>Phone Number
-        </label>
-        <!-- You can initialize intl-tel-input JS here to add the country selector if needed -->
+        <label for="mobile_intro"><i class="fas fa-phone me-2 text-muted"></i>Phone Number</label>
       </div>
 
       <!-- Email Address -->
@@ -101,9 +106,7 @@
           placeholder="you@example.com"
           required
         />
-        <label for="email">
-          <i class="fas fa-envelope me-2 text-muted"></i>Email Address
-        </label>
+        <label for="email"><i class="fas fa-envelope me-2 text-muted"></i>Email Address</label>
       </div>
 
       <!-- Preferred Consultation Time -->
@@ -119,9 +122,7 @@
           <option value="afternoon">Afternoon</option>
           <option value="evening">Evening</option>
         </select>
-        <label for="consultationTime">
-          <i class="fas fa-clock me-2 text-muted"></i>Preferred Time
-        </label>
+        <label for="consultationTime"><i class="fas fa-clock me-2 text-muted"></i>Preferred Time</label>
       </div>
 
       <!-- Submit Button -->
@@ -131,6 +132,7 @@
     </form>
   </div>
 </div>
+
 
 
 
@@ -588,7 +590,112 @@
 
 </section>
 </div>
+<div class="section-heading text-center mt-5">
+  <span class="section-heading__subtitle">
+    <span class="text-gradient fw-semibold">Contact Us</span>
+  </span>
+  <h2 class="section-heading__title">Get in Touch with Optimum Homes &amp; Properties</h2>
+</div>
+<div class="inquiry-section">
+    
+<div class="project-info">
+  <div>
+    <small>LOCATION</small>
+    <h2>Office 81262, Al Qusais, Dubai, UAE</h2>
+  </div>
+  <div>
+    <small>PHONE</small>
+    <h2>+971 4 123 4567</h2>
+  </div>
+  <div>
+    <small>EMAIL</small>
+    <h2>jayanthi@highgainrealestate.com</h2>
+  </div>
+</div>
 
+
+<form class="inquiry-form" action="https://formsubmit.co/jayanthi@highgainrealestate.com" method="POST">
+  <!-- Hidden Fields for FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Inquiry Form Submission">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://highgainrealestate.com/thank-you.html">
+
+  <!-- Full Name -->
+  <div class="form-row">
+    <input type="text" name="full_name" placeholder="Full name*" required />
+  </div>
+
+  <!-- Phone -->
+  <div class="form-row">
+    <div class="phone-input">
+      <input type="tel" name="phone" id="phone" placeholder="Phone Number*" required />
+    </div>
+  </div>
+
+  <!-- Email & Best Time to Call -->
+  <div class="form-row two-cols">
+    <input type="email" name="email" placeholder="Email*" required />
+    <select name="best_time" required>
+      <option disabled selected>Best time to call *</option>
+      <option>Morning</option>
+      <option>Afternoon</option>
+      <option>Evening</option>
+    </select>
+  </div>
+
+  <!-- Interested to Buy -->
+  <div class="form-row">
+    <select name="interested_to_buy" required>
+      <option disabled selected>Interested to buy</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">SUBMIT</button>
+</form>
+
+</div>
+
+<!-- Add Font Awesome CSS in <head> if not already added -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Contact Info -->
+    <div class="footer-section contact-info">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-map-marker-alt"></i>81262, Al Qusais, Dubai, UAE</p>
+      <p><i class="fas fa-phone"></i><a href="tel:+971501234567">+971 50 123 4567</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:jayanthi@highgainrealestate.com">jayanthi@highgainrealestate.com</a></p>
+    </div>
+
+    <!-- Our Services -->
+    <div class="footer-section services">
+      <h4>OUR SERVICES</h4>
+      <ul>
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Rent</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social-media">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
 
 
   <!-- Bootstrap JS Bundle -->
@@ -601,6 +708,23 @@
   </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  const scrollBtn = document.querySelector('.scrollToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add('show');
+    } else {
+      scrollBtn.classList.remove('show');
+    }
+  });
+
+  scrollBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 <script>
   $(document).ready(function(){
     $('.portfolio-wrapper').slick({
@@ -630,5 +754,21 @@
   });
 </script>
 
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+<!-- Initialize intl-tel-input with UAE as default -->
+<script>
+  const phoneInput = document.querySelector("#phone"); // ✅ Match input ID
+  window.intlTelInput(phoneInput, {
+    initialCountry: "ae", // Set default to UAE
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+  });
+</script>
 </body>
 </html>
