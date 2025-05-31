@@ -21,6 +21,8 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 </head>
 <body>
@@ -52,7 +54,7 @@
   <div class="form-box shadow p-4 rounded-4 bg-white">
     <h4 class="mb-4 text-center fw-bold">
       Get a FREE Real Estate<br />
-      <span class="text-danger">5 Minutes!</span>
+      <span class="text" style="color: #F68E20;">5 Minutes!</span>
     </h4>
 
     <form>
@@ -137,10 +139,10 @@
   </section>
 <section class="services-section py-5" data-aos="fade-up">
   <div class="container">
-<div class="section-header">
-  <span class="section-badge"> <h2>OUR SERVICES</h2></span> <!-- Optional badge -->
-  <h2 class="section-title">Let us explore our service &<br>get services</h2>
-</div>
+<div class="section-heading">
+                    <span class="section-heading__subtitle bg-white"> <span class="text-gradient fw-semibold">OUR SERVICES</span> </span>
+                    <h2 class="section-heading__title">Let us explore our service &<br>get services</h2>
+                </div>
     
     <div class="service-cards">
       <div class="card">
@@ -162,7 +164,7 @@
     </div>
   </div>
 </section>
-
+<!-- 
   <main>
     <section class=" container listing">
       <div class="cards" style="background-image: url('image/1.jpg');">
@@ -201,11 +203,95 @@
         <p>Extraordinary Arrangements Accessible</p>
       </div>
     </section>
-  </main>
-<div class="section-title">
-    <span>AMENITIES</span>
-    <h2>Facilities that you will get</h2>
-  </div>
+  </main> -->
+<section class="property-category padding-y-120">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-heading__subtitle bg-white"> <span class="text-gradient fw-semibold">Property Category</span> </span>
+                    <h2 class="section-heading__title">Let us explore our property category</h2>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-1.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>House</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 24 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-2.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>Apartment</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 31 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-3.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>Office</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 34 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-4.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>Vila</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 54 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-5.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>Luxury Home</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 45 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="property-category-item">
+                            <img src="image/property-6.png" alt="" class="cover-img property-category-item__img">
+                            <div class="property-category-item__content">
+                                <h4 class="property-category-item__title fw-600 text-white mb-2">
+                                    <a>Studio</a>
+                                </h4>
+                                <p class="property-category-item__desc text-white">Extraordinary Arrangements Accessible</p>
+                                <span class="property-category-item__amount text-white"> 52 Listings </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <main class="main-content">
+ <div class="section-heading ">
+                    <span class="section-heading__subtitle bg-white"> <span class="text-gradient fw-semibold">AMENITIES</span> </span>
+                    <h2 class="section-heading__title">Facilities that you will get</h2>
+                </div>
+                <div class="container">
 <div class="facility-grid">
   <div class="facility-card">
     <div class="facility-icon"><i class="fas fa-car"></i></div>
@@ -248,112 +334,261 @@
     <div class="facility-text">Bath</div>
   </div>
 </div>
+                </div>
+  </main>
+                 
+
 
 
 <section class="space bg-theme2" style="background-color: #f8f9fa !important">
   <div class="container">
     <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-      <h2 class="sec-title h1">LATEST PROJECTS</h2>
-      <div class="sec-line"><hr></div>
-      <span class="sec-subtitle">our properties for sale</span>
+     <div class="section-heading">
+                    <span class="section-heading__subtitle bg-white"> <span class="text-gradient fw-semibold">LATEST PROJECTS</span> </span>
+                    <h2 class="section-heading__title">our properties for sale</h2>
+                </div>
     </div>
 
-    <div class="row justify-content-center">
-      <!-- Property Card Start -->
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/ChicTower.png" alt="Chic Tower">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">CHIC TOWER</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
+<div class="row justify-content-center">
+  <!-- Property Card Start -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/ChicTower.png" alt="Chic Tower">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">CHIC TOWER</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
           </div>
         </div>
       </div>
-      <!-- Repeat for each property -->
-
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/CoralReef.png" alt="Coral Reef">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">CORAL REEF</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/DAMACBAY.png" alt="DAMAC BAY">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">DAMAC BAY</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/DAMACCasa.png" alt="DAMAC CASA">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">DAMAC CASA</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/DAMACHILLS2.png" alt="DAMAC HILLS 2">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">DAMAC HILLS 2</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="filter-item col-sm-6 col-xl-4 apartment">
-        <div class="propertie-style1">
-          <div class="propertie-img">
-            <img src="image/DAMACLagoons.png" alt="DAMAC LAGOONS- IBIZA">
-          </div>
-          <div class="propertie-content">
-            <h4 class="propertie-name h5">DAMAC LAGOONS - IBIZA</h4>
-            <div class="propertie-bottom d-flex gap-3 align-items-center">
-              <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="tel:+971501234567" class="icon-btn style2" title="Call Now"><i class="fas fa-phone"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Property Card End -->
     </div>
   </div>
+  <!-- Repeat the same block for each property -->
+
+  <!-- Coral Reef -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/CoralReef.png" alt="Coral Reef">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">CORAL REEF</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAMAC BAY -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/DAMACBAY.png" alt="DAMAC BAY">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">DAMAC BAY</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAMAC CASA -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/DAMACCasa.png" alt="DAMAC CASA">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">DAMAC CASA</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAMAC HILLS 2 -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/DAMACHILLS2.png" alt="DAMAC HILLS 2">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">DAMAC HILLS 2</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAMAC LAGOONS -->
+  <div class="filter-item col-sm-6 col-xl-4 apartment">
+    <div class="propertie-style1">
+      <div class="propertie-img">
+        <img src="image/DAMACLagoons.png" alt="DAMAC LAGOONS - IBIZA">
+      </div>
+      <div class="propertie-content">
+        <div class="propertie-header">
+          <h4 class="propertie-name h5">DAMAC LAGOONS - IBIZA</h4>
+          <div class="propertie-icons">
+            <a href="https://wa.me/971501234567" target="_blank" class="icon-btn style2" title="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+971501234567" class="icon-btn style2 phone" title="Call Now">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Property Card End -->
+</div>
+
+  </div>
 </section>
+<div class="container">
+<section class="portfolio padding-t-120 padding-b-60">
+  <div class="section-heading text-center">
+    <span class="section-heading__subtitle">
+      <span class="text-gradient fw-semibold">Latest Portfolio</span>
+    </span>
+    <h2 class="section-heading__title">Optimum Homes &amp; Properties Realty Experts</h2>
+  </div>
+
+<div class="portfolio-wrapper slick-slider">
+  <!-- Portfolio Item 1 -->
+  <div class="portfolio-item">
+    <div class="portfolio-item__thumb">
+      <img src="image/portfolio1.png" alt="Luxury Villas" class="cover-img">
+    </div>
+    <div class="portfolio-item__content">
+      <a class="btn btn-icon circle-arrow">
+        <span class="text-gradient line-height-0">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+      <div class="portfolio-item__inner">
+        <h6 class="portfolio-item__title">
+          <a class="link">Luxury Villas</a>
+        </h6>
+        <p class="portfolio-item__desc">
+          Explore our collection of premium villas offering unparalleled comfort and style.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Item 2 -->
+  <div class="portfolio-item">
+    <div class="portfolio-item__thumb">
+      <img src="image/portfolio2.png" alt="Commercial Spaces" class="cover-img">
+    </div>
+    <div class="portfolio-item__content">
+      <a class="btn btn-icon circle-arrow">
+        <span class="text-gradient line-height-0">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+      <div class="portfolio-item__inner">
+        <h6 class="portfolio-item__title">
+          <a class="link">Commercial Spaces</a>
+        </h6>
+        <p class="portfolio-item__desc">
+          Discover prime commercial properties suitable for various business needs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Item 3 -->
+  <div class="portfolio-item">
+    <div class="portfolio-item__thumb">
+      <img src="image/portfolio3.png" alt="Residential Apartments" class="cover-img">
+    </div>
+    <div class="portfolio-item__content">
+      <a class="btn btn-icon circle-arrow">
+        <span class="text-gradient line-height-0">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+      <div class="portfolio-item__inner">
+        <h6 class="portfolio-item__title">
+          <a class="link">Residential Apartments</a>
+        </h6>
+        <p class="portfolio-item__desc">
+          Browse our range of modern apartments designed for comfortable living.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Item 4 -->
+  <div class="portfolio-item">
+    <div class="portfolio-item__thumb">
+      <img src="image/portfolio4.png" alt="Land Plots" class="cover-img">
+    </div>
+    <div class="portfolio-item__content">
+      <a class="btn btn-icon circle-arrow">
+        <span class="text-gradient line-height-0">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+      <div class="portfolio-item__inner">
+        <h6 class="portfolio-item__title">
+          <a class="link">Land Plots</a>
+        </h6>
+        <p class="portfolio-item__desc">
+          Invest in strategically located land plots for future development.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+</div>
+
 
 
   <!-- Bootstrap JS Bundle -->
@@ -364,6 +599,36 @@
   <script>
     AOS.init();
   </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.portfolio-wrapper').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0px',
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: { slidesToShow: 3 }
+        },
+        {
+          breakpoint: 992,
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 576,
+          settings: { slidesToShow: 1 }
+        }
+      ]
+    });
+  });
+</script>
 
 </body>
 </html>
