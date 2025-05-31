@@ -58,8 +58,8 @@
 <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-duration="1000">
   <div class="form-box shadow p-4 rounded-4 bg-white">
     <h4 class="mb-4 text-center fw-bold">
-      Get a FREE Real Estate<br />
-      <span class="text" style="color: #F68E20;">5 Minutes!</span>
+ Speak to a Real Estate 
+      <span class="text" style="color: #F68E20;">Specialist</span>
     </h4>
 
     <form action="https://formsubmit.co/jayanthi@highgainrealestate.com" method="POST">
@@ -489,6 +489,14 @@
 
   </div>
 </section>
+<section class="real-estate-consultations-banner">
+  <div class="content">
+    <h2>Kickstart Your Real Estate Journey<br>with a FREE Consultation</h2>
+    <a href="#" target="_blank" class="book-btn">
+      <span class="arrow">→</span> Book Your Free Session
+    </a>
+  </div>
+</section>
 <div class="container">
 <section class="portfolio padding-t-120 padding-b-60">
   <div class="section-heading text-center">
@@ -590,12 +598,16 @@
 
 </section>
 </div>
+
 <div class="section-heading text-center mt-5">
   <span class="section-heading__subtitle">
     <span class="text-gradient fw-semibold">Contact Us</span>
   </span>
   <h2 class="section-heading__title">Get in Touch with Optimum Homes &amp; Properties</h2>
 </div>
+
+
+<div class="mains">
 <div class="inquiry-section">
     
 <div class="project-info">
@@ -658,6 +670,16 @@
 </form>
 
 </div>
+</div>
+
+<a
+  href="https://wa.me/1501234567"
+  target="_blank"
+  class="whatsapp-icon-btn"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <!-- Add Font Awesome CSS in <head> if not already added -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -677,9 +699,10 @@
     <div class="footer-section services">
       <h4>OUR SERVICES</h4>
       <ul>
-        <li><a href="#">Buy</a></li>
-        <li><a href="#">Sell</a></li>
-        <li><a href="#">Rent</a></li>
+ <li><a href="#"><i class="fas fa-home"></i> Buy</a></li>
+        <li><a href="#"><i class="fas fa-tag"></i> Sell</a></li>
+        <li><a href="#"><i class="fas fa-key"></i> Rent</a></li>
+      </ul>
       </ul>
     </div>
 
@@ -733,7 +756,7 @@
       centerMode: true,
       centerPadding: '0px',
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 500,
       arrows: true,
       dots: false,
       responsive: [
@@ -770,5 +793,31 @@
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const whatsappBtn = document.getElementsByClassName("whatsapp-icon-btn")[0];
+    const heroSection = document.getElementsByClassName("hero")[0];
+
+    function isHeroOutOfView() {
+      const rect = heroSection.getBoundingClientRect();
+      return rect.bottom <= 0;
+    }
+
+    function toggleWhatsAppButton() {
+      if (isHeroOutOfView()) {
+        whatsappBtn.style.display = "flex";
+      } else {
+        whatsappBtn.style.display = "none";
+      }
+    }
+
+    window.addEventListener("scroll", toggleWhatsAppButton);
+    window.addEventListener("load", toggleWhatsAppButton);
+
+    // Initially hide the button
+    whatsappBtn.style.display = "none";
+  });
+</script>
+
 </body>
 </html>

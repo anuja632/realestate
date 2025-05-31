@@ -193,7 +193,8 @@ html, body {
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
+  border-radius: 10px;
 }
 
 /* Labels */
@@ -388,8 +389,8 @@ label {
 
 /* Base Icon Button */
 .icon-btn.style2 {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #f1f1f1;
   border-radius: 50%;
   display: inline-flex;
@@ -400,20 +401,21 @@ label {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-decoration: none;
+  
 }
 
-/* WhatsApp Hover */
-.icon-btn.style2:hover {
-  background-color: #25d366;
-  color: #fff;
+
+/* Keep WhatsApp icon green always */
+.icon-btn.style2 .fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+  font-size: 20px;
 }
 
 /* Phone Hover */
-.icon-btn.style2.phone:hover {
-  background-color: #007bff;
-  color: #fff;
+.icon-btn.style2.phone {
+  color: #007bff;
+  /* color: #fff; */
 }
-
 /* Responsive */
 @media (max-width: 576px) {
   .propertie-header {
@@ -490,7 +492,7 @@ p{
     font-size: calc(1.425rem + 2.1vw);
     font-weight: 300;
     line-height: 1.2;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .facility-grid {
     display: grid
@@ -499,13 +501,61 @@ p{
     gap: 15px;
     padding: 20px;
 }
+
 }
 
-@media (max-width: 900px) {
+@media (max-width:768px)
+{
+.form-box{
+    width:300px !important;
+}
+}@media (max-width: 992px) {
   .listing {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
   }
+  .form-box{
+    width:350px !important;
 }
+.hero {
+    /* background: url(../image/1.jpg) center center / cover no-repeat; */
+    height: 80vh;
+    display: flex
+;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+}
+.whatsapp-icon-btn {
+  position: fixed;
+  bottom: 320px;  /* Set the distance from the bottom to 50px */
+left: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-icon-btn:hover {
+  background-color: #25D366;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+
+
 
 @media (max-width: 600px) {
   .listing {
@@ -613,8 +663,8 @@ p{
 
 
     .facility-icon {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       background: #ffe5cc;
       border-radius: 50%;
       display: flex;
@@ -810,14 +860,56 @@ p{
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+
 .inquiry-section {
+  position: relative; /* Needed for the overlay to work */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
-  padding:2rem;
+  padding: 2rem;
+
+  color:white;
+  font-family:"poppins";
 }
+.mains {
+  position: relative; /* Critical for ::before to overlay correctly */
+  background-image: url('/image/luxury.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 100%;
+  /* min-height: 100vh; Ensure it stretches full screen if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.mains::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
+  pointer-events: none; /* Allows clicks through overlay */
+}
+#phone {
+    padding-left: 6rem !important;
+    width: 100%;
+}
+.mains > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .project-info {
   flex: 1;
@@ -825,17 +917,20 @@ p{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+    color:white;
+
 }
 
 .project-info small {
   font-size: 0.75rem;
-  color: #999;
   text-transform: uppercase;
   letter-spacing: 1px;
+    color:white;
+
 }
 
 .project-info h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.3rem 0 0;
   font-weight: 400;
 }
@@ -869,14 +964,14 @@ select {
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: none;
-  border-bottom: 1px solid #ccc;
-  background-color: transparent;
+  border-bottom: 1px solid white;
+  background-color: white;
   outline: none;
 }
 
 input:focus,
 select:focus {
-  border-color: #333;
+  border-color: white;
 }
 
 .phone-input {
@@ -887,7 +982,7 @@ select:focus {
 
 .country-code {
   padding: 0.75rem 1rem;
-  background-color: #eee;
+  background-color:white;
   border-right: 1px solid #ccc;
   white-space: nowrap;
 }
@@ -899,8 +994,8 @@ select:focus {
 }
 
 button {
-  background-color: #3b3735;
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 0.9rem 2rem;
   border: none;
   cursor: pointer;
@@ -1030,4 +1125,54 @@ button:hover {
     flex-direction: column;
     gap: 1.5rem;
   }
+}
+.real-estate-consultations-banner {
+  position: relative;
+  background: url("/image/realestate.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(30, 78, 140, 0.4);
+  overflow: hidden;
+}
+
+.real-estate-consultations-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;  /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.real-estate-consultations-banner .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.real-estate-consultations-banner .book-btn {
+  display: inline-block;
+  background-color: #ff7f50; /* coral accent */
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 127, 80, 0.4);
+}
+
+.real-estate-consultations-banner .book-btn:hover {
+  background-color: #e76b42;
+  transform: translateY(-3px);
+}
+
+.real-estate-consultations-banner .arrow {
+  font-weight: 700;
+  margin-left: 8px;
 }
