@@ -875,7 +875,7 @@ left: 20px;
 }
 .mains {
   position: relative; /* Critical for ::before to overlay correctly */
-  background-image: url('./image/luxury.jpg');
+  background-image: url('./../image/luxury.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
