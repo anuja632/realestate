@@ -514,45 +514,10 @@ p{
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
   }
   .form-box{
-    width:350px !important;
-}
-.hero {
-    /* background: url(../image/1.jpg) center center / cover no-repeat; */
-    height: 80vh;
-    display: flex
-;
-    align-items: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-}
-.whatsapp-icon-btn {
-  position: fixed;
-  bottom: 320px;  /* Set the distance from the bottom to 50px */
-left: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 28px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 1000;
-  text-decoration: none;
+    width:300px !important;
 }
 
-.whatsapp-icon-btn:hover {
-  background-color: #25D366;
-  color: white;
-  transform: translateY(-50%) scale(1.1);
 }
-
 
 
 
@@ -1175,4 +1140,113 @@ button:hover {
 .real-estate-consultations-banner .arrow {
   font-weight: 700;
   margin-left: 8px;
+}
+/* Popup overlay */
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Container for form and image */
+.popup-form .form-container {
+  background: #fff;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Close button */
+.popup-form .close-btn {
+  position: absolute;
+  top: 0px; right: 10px;
+  background: none;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  color:red;
+}
+
+/* Wrapper for image + form */
+.popup-form .popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Image styles */
+.popup-form img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+/* Form styles */
+.popup-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top:40px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="tel"],
+.popup-form input[type="email"],
+.popup-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-form button[type="submit"] {
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive layout for laptops and above */
+@media screen and (min-width: 768px) {
+  .popup-form .form-container {
+    max-width: 900px;
+  }
+  .popup-form .popup-content {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .popup-form img {
+    width: 50%;
+    max-height: none;
+    border-radius: 8px;
+  }
+  .popup-form form {
+    width: 50%;
+  }
+
+}
+@media screen and (max-width:550px){
+    .popup-form .close-btn {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: red;
+}
 }

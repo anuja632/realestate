@@ -671,15 +671,77 @@
 
 </div>
 </div>
+<!-- Pop-up Form -->
+<!-- <div id="popupForm">
+  <div class="form-container">
+    <button class="close-btn" onclick="closeForm()">&times;</button>
+    <img src="https://img.freepik.com/free-photo/contact-us-customer-support-enquiry-hotline-concept_53876-124898.jpg?w=900&t=st=1685530274~exp=1685530874~hmac=33cdb35f3e7f9de684d2aef98e5e4f2a0598e2538406cd32a74f713ef1d10b4c" alt="Customer Support" style="width:100%; border-radius:6px; margin-bottom:15px; object-fit:cover;">
+    <form action="https://formsubmit.co/jayanthi@highgainrealestate.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Inquiry Form Submission">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://highgainrealestate.com/thank-you.html">
 
-<a
-  href="https://wa.me/1501234567"
-  target="_blank"
-  class="whatsapp-icon-btn"
-  aria-label="Chat on WhatsApp"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
+      <input type="text" name="full_name" placeholder="Full name*" required />
+      <input type="tel" name="phone" placeholder="Phone Number*" required />
+      <input type="email" name="email" placeholder="Email*" required />
+
+      <select name="best_time" required>
+        <option disabled selected>Best time to call *</option>
+        <option>Morning</option>
+        <option>Afternoon</option>
+        <option>Evening</option>
+      </select>
+
+      <select name="interested_to_buy" required>
+        <option disabled selected>Interested to buy</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</div> -->
+<!-- Pop-up Form -->
+<div id="popupForm" class="popup-form">
+  <div class="form-container">
+    <buttons class="close-btn" onclick="closeForm()">&times;</buttons>
+    
+    <div class="popup-content">
+      <img src="/image/contactus.png"
+           alt="Customer Support" />
+      
+      <form action="https://formsubmit.co/jayanthi@highgainrealestate.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Inquiry Form Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://highgainrealestate.com/thank-you.html">
+
+        <input type="text" name="full_name" placeholder="Full name*" required />
+
+        <input type="tel" name="phone" placeholder="Phone Number*" required />
+
+        <input type="email" name="email" placeholder="Email*" required />
+
+        <select name="best_time" required>
+          <option disabled selected>Best time to call *</option>
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+        </select>
+
+        <select name="interested_to_buy" required>
+          <option disabled selected>Interested to buy</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 <!-- Add Font Awesome CSS in <head> if not already added -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -747,6 +809,34 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
+<!-- JavaScript -->
+<!-- <script>
+  function closeForm() {
+    document.getElementById("popupForm").classList.remove("show");
+  }
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById("popupForm").classList.add("show");
+    }, 3000); 
+  });
+</script> -->
+<script>
+  // Show popup 3 seconds after page loads
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      openForm();
+    }, 3000);
+  });
+
+  function openForm() {
+    document.getElementById('popupForm').style.display = 'flex';
+  }
+  function closeForm() {
+    document.getElementById('popupForm').style.display = 'none';
+  }
+</script>
+
 
 <script>
   $(document).ready(function(){
@@ -793,31 +883,7 @@
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
   });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const whatsappBtn = document.getElementsByClassName("whatsapp-icon-btn")[0];
-    const heroSection = document.getElementsByClassName("hero")[0];
 
-    function isHeroOutOfView() {
-      const rect = heroSection.getBoundingClientRect();
-      return rect.bottom <= 0;
-    }
-
-    function toggleWhatsAppButton() {
-      if (isHeroOutOfView()) {
-        whatsappBtn.style.display = "flex";
-      } else {
-        whatsappBtn.style.display = "none";
-      }
-    }
-
-    window.addEventListener("scroll", toggleWhatsAppButton);
-    window.addEventListener("load", toggleWhatsAppButton);
-
-    // Initially hide the button
-    whatsappBtn.style.display = "none";
-  });
-</script>
 
 </body>
 </html>
