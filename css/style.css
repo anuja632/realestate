@@ -353,11 +353,10 @@ box-shadow: 1.5px 2.598px 14.88px 1.12px rgba(116, 117, 117, 0.1);  overflow: hi
   padding: 20px;
 }
 
-
 .cards {
   position: relative;
   height: 200px;
-  width:350px;
+  max-width: 350px;
   border-radius: 12px;
   color: white;
   background-size: cover;
@@ -367,6 +366,7 @@ box-shadow: 1.5px 2.598px 14.88px 1.12px rgba(116, 117, 117, 0.1);  overflow: hi
   justify-content: flex-end;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
 .badge {
@@ -388,6 +388,22 @@ box-shadow: 1.5px 2.598px 14.88px 1.12px rgba(116, 117, 117, 0.1);  overflow: hi
 
 .cards p {
   font-size: 14px;
+}
+/* Dark overlay on background */
+.cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* or use a gradient */
+  border-radius: 12px;
+  z-index: 1;
+}
+
+
+.cards h2,
+.cards p {
+  position: relative;
+  z-index: 2;
 }
     .section-title {
       text-align: center;
