@@ -465,7 +465,9 @@ p{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding:0px;
+}
+.inquiry-section {
+  padding:0rem !important;
 }
 .two-cols {
     flex-direction:column !important;
