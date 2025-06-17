@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dubai Real Estate | High Gain</title>
+
+    <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Include CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/css/intlTelInput.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <style>
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .more-content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .card.expanded .more-content {
+      display: block;
+    }
+
+    .navbar{
+        width:100%;
+    }   
+     .card .btn {
+      margin-top: auto;
+    }
+    .card-img-top {
+  height: 300px; /* or 200px, depending on your design */
+  object-fit: cover;
+}
+body{
+margin-top: 80px;
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-dark  bg-dark fixed-top">
+  <div class="container-fluid">
+    
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="image/new-logo.jpeg" alt="Logo" height="60" class="d-inline-block align-text-top rounded">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Sidebar Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+<a class="navbar-brand" href="index.html">
+  <img src="image/new-logo.jpeg" alt="Logo" height="60" class="d-inline-block align-text-top rounded">
+</a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container py-5">
+  <div class="row g-4">
+
+  <!-- Card 1 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/skyhall.jpg" class="card-img-top" alt="Binghatti Skyhall">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Skyhall</h5>
+        <p>Rising above the dynamic pulse of Business Bay, Skyhall emerges as a testament to innovation...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential & Retail</p>
+          <p><strong>Location:</strong> Business Bay</p>
+          <p><strong>Plot Area:</strong> 5,704.66 SQ.M (61,404.45 SQ.FT)</p>
+          <p><strong>Units:</strong> Studio – 489, 1BR – 228</p>
+          <p><strong>Floors:</strong> 3B + G + 3P + 29 + Mechanical + Roof</p>
+          <p><strong>Total Units:</strong> 717 Residential + 11 Shops</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/hillview.jpg" class="card-img-top" alt="Binghatti Hillviews">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Hillviews</h5>
+        <p>Rise above. Embrace the expanse. Discover a mode of living where ambition thrives...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential & Retail</p>
+          <p><strong>Plot Area:</strong> 11,851.83 SQ.M (127,571.91 SQ.FT)</p>
+          <p><strong>Units:</strong> Studio – 688, 1BR – 757, 2BR – 107</p>
+          <p><strong>Floors:</strong> 2B + G + 4P + 35 + Mechanical + Roof</p>
+          <p><strong>Total Units:</strong> 1552 Residential + 19 Shops</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/starlight.jpg" class="card-img-top" alt="Binghatti Starlight">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Starlight</h5>
+        <p>Starlight is an invite to those who seek a life less ordinary. Dreams take flight...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential</p>
+          <p><strong>Plot Area:</strong> 4116.78 SQ.M (44,313 SQ.FT)</p>
+          <p><strong>Units:</strong> Studio – 294, 1BR – 155, 2BR – 61</p>
+          <p><strong>Floors:</strong> 3B + G + 3P + 20 + Roof</p>
+          <p><strong>Total Units:</strong> 510 Residential + 1 Shop</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/ruby.jpg" class="card-img-top" alt="Binghatti Ruby">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Ruby</h5>
+        <p>Ruby glows with the passionate hues of crimson. A beacon of brilliance at the heart of the city...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential & Retail</p>
+          <p><strong>Location:</strong> Jumeirah Village Circle</p>
+          <p><strong>Plot Area:</strong> 4,687.10 SQ.M (50,451.48 SQFT)</p>
+          <p><strong>Units:</strong> Studio – 319, 1BR – 185, 2BR – 66, 3BR – 2</p>
+          <p><strong>Floors:</strong> B + G + 4P + 2 Offices + 18 + Roof</p>
+          <p><strong>Total Units:</strong> 572 Residential + 8 Offices + 10 Shops</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/haven.jpg" class="card-img-top" alt="Binghatti Haven">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Haven</h5>
+        <p>Amid the vibrant pulse of Dubai Sports City, Haven emerges as a sanctuary of renewal...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential</p>
+          <p><strong>Plot Area:</strong> 7,119.12 SQ.M (76,630 SQ.FT)</p>
+          <p><strong>Units:</strong> Studio – 117, 1BR – 154, 2BR – 217, 3BR – 13</p>
+          <p><strong>Floors:</strong> B + G + 3P + 26 + Roof</p>
+          <p><strong>Total Units:</strong> 501 Residential</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="col-md-4">
+    <div class="card">
+      <img src="image/skyrise.jpg" class="card-img-top" alt="Binghatti Skyrise">
+      <div class="card-body">
+        <h5 class="card-title">Binghatti Skyrise</h5>
+        <p>Skyrise whispers of a sanctuary for the soul—an ethereal retreat where city and serenity meet...</p>
+        <div class="more-content">
+          <p><strong>Property Type:</strong> Residential & Retail</p>
+          <p><strong>Location:</strong> Business Bay</p>
+          <p><strong>Plot Area:</strong> 26,933.81 SQ.M (289,913.12 SQFT)</p>
+          <p><strong>Units:</strong> Studio – 2256, 1BR – 996, 2BR – 24, 3BR – 26</p>
+          <p><strong>Floors:</strong> 4B + G + 5P + 48 + 2 Mechanical + Roof (3 Towers)</p>
+          <p><strong>Total Units:</strong> 764 Residential + 8 Shops</p>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+      </div>
+    </div>
+  </div>
+<!-- Card 7 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/ghost.jpg" class="card-img-top" alt="Binghatti Ghost">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Ghost</h5>
+      <p>A journey beyond the tangible. Embrace the enigmatic. Live intentionally...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Al Jaddaf</p>
+        <p><strong>Plot Area:</strong> 6,507 SQ.M (70,047.80 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 438, 1BR – 232, 2BR – 40, 3BR – 60</p>
+        <p><strong>Floors:</strong> 2B + G + 3P + 20 + Roof</p>
+        <p><strong>Total Units:</strong> 770 Residential + 6 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 8 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/ivory.jpg" class="card-img-top" alt="Binghatti Ivory">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Ivory</h5>
+      <p>A place where rarity and elegance come together. Life filled with timeless beauty...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Al Jaddaf</p>
+        <p><strong>Plot Area:</strong> 3,088.32 SQ.M (33,242 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 76, 1BR – 177, 2BR – 78</p>
+        <p><strong>Floors:</strong> 2B + G + 3P + 20 + Roof</p>
+        <p><strong>Total Units:</strong> 331 Residential + 1 Shop</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 9 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/grove.jpg" class="card-img-top" alt="Binghatti Grove">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Grove</h5>
+      <p>A serene sanctuary elegantly weaving together architecture and nature...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 6,424.10 SQ.M (69,148.37 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 360, 1BR – 20, 2BR – 8</p>
+        <p><strong>Floors:</strong> UG + G + 4P + 1st (Amenity) + 42 + Mechanical + Roof</p>
+        <p><strong>Total Units:</strong> 388 Residential + 16 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 10 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/dawn.jpg" class="card-img-top" alt="Dawn by Binghatti">
+    <div class="card-body">
+      <h5 class="card-title">Dawn by Binghatti</h5>
+      <p>Inspired by daybreak, this hyper-property celebrates moments of radiance...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,203.54 SQ.M (23,718.68 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 55, 1BR – 39, 2BR – 1</p>
+        <p><strong>Floors:</strong> 2B + G + 4 + Roof</p>
+        <p><strong>Total Units:</strong> 95 Residential + 2 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 11 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/royale.jpg" class="card-img-top" alt="Binghatti Royale">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Royale</h5>
+      <p>Royale epitomizes prestige and sophistication in every architectural detail...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 5,775.97 SQ.M (62,172.02 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 340, 2BR – 10, 3BR – 4</p>
+        <p><strong>Floors:</strong> UG + G + 4P + Amenity + 37 + Mechanical + Roof</p>
+        <p><strong>Total Units:</strong> 354 Residential + 16 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 12 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/dusk.jpg" class="card-img-top" alt="Dusk by Binghatti">
+    <div class="card-body">
+      <h5 class="card-title">Dusk by Binghatti</h5>
+      <p>Evoking introspection, Dusk merges fading light with night’s mystery...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,593.16 SQ.M (27,912.51 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 52, 1BR – 53</p>
+        <p><strong>Floors:</strong> 2B + G + 4 + Roof</p>
+        <p><strong>Total Units:</strong> 105 Residential + 2 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 13 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/one.jpg" class="card-img-top" alt="One by Binghatti">
+    <div class="card-body">
+      <h5 class="card-title">One by Binghatti</h5>
+      <p>A paradigm for ethereal waterfront living in Business Bay unfolds here...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Business Bay</p>
+        <p><strong>Plot Area:</strong> 10,061.41 SQ.M (108,300 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 111, 1BR – 496, 2BR – 110, 3BR – 1, 3BR Townhouse – 10, 4BR – 8</p>
+        <p><strong>Floors:</strong> 3B + G + 2P + 1 Amenity + 62 + 2 Mechanical + Roof</p>
+        <p><strong>Total Units:</strong> 736 Residential + 10 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 14 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/hills.jpg" class="card-img-top" alt="Binghatti Hills">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Hills</h5>
+      <p>Inspired by natural terrain contours, Binghatti Hills captures the ambiance of rolling hillsides with tranquil architecture...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Dubai Science Park</p>
+        <p><strong>Plot Area:</strong> 13,938.46 SQ.M (150,032.00 SQ.FT.)</p>
+        <p><strong>Units:</strong> Studio – 852, 1BR – 528, 2BR – 286</p>
+        <p><strong>Total Units:</strong> Residential – 1,666, Shop – 21</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 15 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/trillionarie.jpg" class="card-img-top" alt="Trillionaire Residences by Binghatti">
+    <div class="card-body">
+      <h5 class="card-title">Trillionaire Residences</h5>
+      <p>Set by a tranquil waterway in Business Bay, redefining affluent living...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Business Bay</p>
+        <p><strong>Plot Area:</strong> 4,705.32 SQ.M (50,648.00 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 239, 1BR – 59, 2BR – 64</p>
+        <p><strong>Floors:</strong> 2B + G + 3P + 19 + Roof</p>
+        <p><strong>Total Units:</strong> 362 Residential + 6 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 16 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/phantom.jpg" class="card-img-top" alt="Binghatti Phantom">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Phantom</h5>
+      <p>Phantom evokes ethereal elegance and challenges conventional design...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 5,727.50 SQ.M (61,650.29 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 340, 2BR – 10, 3BR – 4</p>
+        <p><strong>Floors:</strong> UG + G + 4P + Amenity + 37 + Mechanical + Roof</p>
+        <p><strong>Total Units:</strong> 354 Residential + 15 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 17 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/aurora.jpg" class="card-img-top" alt="Binghatti Aurora">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Aurora</h5>
+      <p>With the light of dawn, Aurora emerges as a place of new beginnings...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 7,152 SQ.M (76,983 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 92, 1BR – 163, 2BR – 20</p>
+        <p><strong>Total Units:</strong> 275 Residential</p>
+        <p><strong>Floors:</strong> B + G + Residential Floors + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 18 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/onyx.jpg" class="card-img-top" alt="Binghatti Onyx">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Onyx</h5>
+      <p>Onyx blends innovation with sophistication in a striking vertical form...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 4,702.98 SQ.M (50,622.45 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 310, 2BR – 128</p>
+        <p><strong>Floors:</strong> B + G + 4 + 36 Typical + Roof</p>
+        <p><strong>Total Units:</strong> 438 Residential</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 19 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/onyx.jpg" class="card-img-top" alt="Binghatti Amber">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Amber</h5>
+      <p>Amber draws from automotive and aeronautical design, defying norms with bold innovation...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential, Office & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 5,813.95 SQ.M (19,074.63 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 54, 1BR – 418, 2BR – 82, 3BR – 2</p>
+        <p><strong>Floors:</strong> G + 4P + 19 + Roof</p>
+        <p><strong>Total Units:</strong> 556 Residential + 17 Shops + 68 Offices</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 20 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/venus.jpg" class="card-img-top" alt="Binghatti Venus">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Venus</h5>
+      <p>Venus fuses design and craftsmanship for a perfect balance of form and function...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 1,684.83 SQ.M (18,131.20 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 162, 2BR – 28</p>
+        <p><strong>Floors:</strong> UG + G + 5P + 28 + Roof</p>
+        <p><strong>Total Units:</strong> 190 Residential + 1 Shop</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 21 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/lavendar.jpg" class="card-img-top" alt="Binghatti Lavender">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Lavender</h5>
+      <p>Lavender blends timeless design with modern elegance in every detail...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 1,507.89 SQ.M (16,230.78 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 37, 1BR – 99, 2BR – 28</p>
+        <p><strong>Floors:</strong> B + G + 4P + 13 + Roof</p>
+        <p><strong>Total Units:</strong> 164 Residential + 2 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 22 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/gardenia.jpg" class="card-img-top" alt="Binghatti Gardenia">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Gardenia</h5>
+      <p>Gardenia showcases refined luxury through contemporary detailing and visual harmony...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential, Office & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,462.82 SQ.M (26,509.57 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 54, 1BR – 161, 2BR – 53, 3BR – 6</p>
+        <p><strong>Floors:</strong> UG + G + 5P + 4 Office + 29 Residential + Roof</p>
+        <p><strong>Total Units:</strong> 274 Residential + 1 Shop + 23 Offices</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 23 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/azure.jpg" class="card-img-top" alt="Binghatti Azure">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Azure</h5>
+      <p>Azure combines comfort, style, and artisan design for a unique living experience...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential, Office & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 4,664.29 SQ.M (50,205.95 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 331, 1BR – 203, 2BR – 50</p>
+        <p><strong>Floors:</strong> B + G + 4P + 2 Office + 18 Residential + Roof</p>
+        <p><strong>Total Units:</strong> 584 Residential + 11 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 24 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/tulip.jpg" class="card-img-top" alt="Binghatti Tulip">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Tulip</h5>
+      <p>Tulip offers premium finishes, high ceilings, and airy interiors with great attention to detail...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,255.63 SQ.M (24,279.60 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 58, 1BR – 160, 2BR – 46, 3BR – 12</p>
+        <p><strong>Floors:</strong> UG + G + 5P + 30 + Roof</p>
+        <p><strong>Total Units:</strong> 276 Residential + 3 Shops</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 25 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/house.jpg" class="card-img-top" alt="Binghatti House">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti House</h5>
+      <p>An exquisite icon of contemporary luxury, marked by bold vision and fine craft...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,386.74 SQ.M (25,690.86 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 52, 1BR – 163, 2BR – 55</p>
+        <p><strong>Floors:</strong> UG + G + 5P + 4 Office + 28 Residential + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 26 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/canal.jpg" class="card-img-top" alt="Binghatti Canal">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Canal</h5>
+      <p>Canal’s bold aerodynamic structure reflects pure opulence and architectural precision...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Commercial</p>
+        <p><strong>Location:</strong> Business Bay</p>
+        <p><strong>Plot Area:</strong> 3,636.16 SQ.M (39,139.30 SQ.FT)</p>
+        <p><strong>Units:</strong> Studio – 84, 1BR – 124, 2BR – 85</p>
+        <p><strong>Floors:</strong> B + G + 3P + 10 Floors + Mechanical + 11 Floors + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 27 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/greek.jpg" class="card-img-top" alt="Binghatti Creek">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Creek</h5>
+      <p>Inspired by river flow, Binghatti Creek features a stream-set design with dynamic lighting...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Commercial</p>
+        <p><strong>Location:</strong> Al Jaddaf</p>
+        <p><strong>Plot Area:</strong> 3,159.37 SQ.M (34,007.18 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 230, 2BR – 21, 3BR – 83</p>
+        <p><strong>Floors:</strong> B + G + Mezz + 2P + 21 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 28 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/corner.jpg" class="card-img-top" alt="Binghatti Corner">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Corner</h5>
+      <p>Sleek and symmetrical, Binghatti Corner is a visual statement of structural elegance...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Mixed-Residential, Commercial & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 5,829.33 SQ.M (62,746.38 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 528, 2BR – 106</p>
+        <p><strong>Floors:</strong> G + 4P + 29 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 29 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/emerald.jpg" class="card-img-top" alt="Binghatti Emerald">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Emerald</h5>
+      <p>Timeless elegance and masterful craftsmanship define the Emerald’s sophisticated aura...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential, Offices & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 3,068.57 SQ.M (33,029.78 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 217, 2BR – 53, 3BR – 11</p>
+        <p><strong>Total Units:</strong> Residential – 281, Shops – 9, Offices – 38</p>
+        <p><strong>Floors:</strong> B + G + 4P + 20 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 30 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/heights.jpg" class="card-img-top" alt="Binghatti Heights">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Heights</h5>
+      <p>Rooted in aeronautical inspiration, Binghatti Heights redefines architectural ingenuity...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Commercial</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,373.13 SQ.M (25,544.16 SQ.FT)</p>
+        <p><strong>Total Units:</strong> Residential – 365, Retail – 1</p>
+        <p><strong>Floors:</strong> B + G + 5P + 30 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 31 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/crescent.jpg" class="card-img-top" alt="Binghatti Crescent">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Crescent</h5>
+      <p>A celebration of engineering and architectural harmony, Crescent shines with elegance...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Mixed-Residential & Retail</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 5,000.57 SQ.M (53,825.69 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 87, 2BR – 56, 3BR – 22</p>
+        <p><strong>Floors:</strong> B + G + 5 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- Card 32 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/crest.jpg" class="card-img-top" alt="Binghatti Crest">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Crest</h5>
+      <p>A high-concept masterpiece, Binghatti Crest defies conventions with dimensional depth...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Commercial</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 1,830.96 SQ.M (19,708.28 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 95, 2BR – 38, 3BR – 37</p>
+        <p><strong>Floors:</strong> G + 4P + 19 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 33 -->
+<div class="col-md-4">
+  <div class="card">
+    <img src="image/luna.jpg" class="card-img-top" alt="Binghatti Luna">
+    <div class="card-body">
+      <h5 class="card-title">Binghatti Luna</h5>
+      <p>Playing with light and shadow, Binghatti Luna fuses tradition with modern innovation...</p>
+      <div class="more-content">
+        <p><strong>Property Type:</strong> Residential & Commercial</p>
+        <p><strong>Location:</strong> Jumeirah Village Circle</p>
+        <p><strong>Plot Area:</strong> 2,479.32 SQ.M (26,687.18 SQ.FT)</p>
+        <p><strong>Units:</strong> 1BR – 160, 2BR – 32, 3BR – 15</p>
+        <p><strong>Floors:</strong> B + G + 4P + 16 + Roof</p>
+      </div>
+      <button class="btn btn-outline-primary mt-2" onclick="toggleCard(this)">Read More</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Contact Info -->
+    <div class="footer-section contact-info">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-map-marker-alt"></i>81262, Al Qusais, Dubai, UAE</p>
+      <p><i class="fas fa-phone"></i><a href="tel:+971508364706">+971508364706</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:amir@highgainrealestate.com">amir@highgainrealestate.com</a></p>
+    </div>
+
+    <!-- Our Services -->
+    <div class="footer-section services">
+      <h4>OUR SERVICES</h4>
+      <ul>
+ <li><a href="#"><i class="fas fa-home"></i> Buy</a></li>
+        <li><a href="#"><i class="fas fa-tag"></i> Sell</a></li>
+        <li><a href="#"><i class="fas fa-key"></i> Rent</a></li>
+      </ul>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social-media">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+<!-- Initialize intl-tel-input with UAE as default -->
+<script>
+  const phoneInput = document.querySelector("#phone"); // ✅ Match input ID
+  window.intlTelInput(phoneInput, {
+    initialCountry: "ae", // Set default to UAE
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+  });
+</script>
+
+<!-- All your HTML here -->
+
+<script>
+  function toggleCard(button) {
+    const moreContent = button.previousElementSibling;
+    if (moreContent.style.display === "none" || !moreContent.style.display) {
+      moreContent.style.display = "block";
+      button.innerText = "Read Less";
+    } else {
+      moreContent.style.display = "none";
+      button.innerText = "Read More";
+    }
+  }
+</script>
+
+<!-- Scripts at end of body -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("menuToggle");
+    const offcanvas = document.getElementById("offcanvasMenu");
+    const closeBtn = document.getElementById("closeMenu");
+
+    toggleBtn.addEventListener("click", () => {
+      offcanvas.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      offcanvas.classList.remove("open");
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

@@ -184,26 +184,13 @@ html, body {
   z-index: 1050;
 }
 
-.offcanvas {
- max-width: 300px;
-}
-
-.offcanvas .nav-link {
-  color: #000 !important;
-}
-
-.offcanvas .nav-link.active {
-  font-weight: bold;
-}
-
 /* Logo */
-.logo{
+.logo {
   position: absolute;
   top: 20px;
   left: 30px;
   z-index: 3;
 }
-
 
 .logo img {
   height: 70px;
@@ -217,7 +204,46 @@ label {
 }
 
 
+    /* Off-Canvas Styles */
+    .offcanvas {
+      position: fixed;
+      top: 0;
+      right: -300px; /* Start off screen */
+      height: 100vh;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      z-index: 999;
+      transition: right 0.3s ease-in-out;
+      padding: 2rem;
+    }
 
+    .offcanvas.open {
+      right: 0;
+    }
+
+    .offcanvas .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
+    }
+
+    .menu-links li {
+      margin: 20px 0;
+    }
+
+    .menu-links a {
+      color: #333;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu-links a:hover {
+      color: #F68E20;
+    }
 
 .services-section {
   max-width: 1200px;
@@ -981,7 +1007,7 @@ select:focus {
   flex: 1;
 }
 
-.submit {
+button {
   background-color: #F68E20;
   color: white;
   padding: 0.9rem 2rem;
@@ -990,8 +1016,7 @@ select:focus {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: background 0.3s ease;   
-   width: 200px;
+  transition: background 0.3s ease;    width: 200px;
 
 }
 
