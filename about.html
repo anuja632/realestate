@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us | High Gain Real Estate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dubai Real Estate | High Gain</title>
 
-  <!-- Google Fonts: Poppins -->
+    <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
   <!-- Bootstrap CSS -->
@@ -27,106 +27,85 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <style>
-
-
-    .display-5{
-    font-family: 'Playfair Display', serif;
+    /* body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    } */
+    .team-card {
+      background-color: #1c1c1c;
+      border: none;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      color:white;
     }
-
-    .form-container {
-      margin-top: 60px;
+    .team-card h1 {
+      font-weight: 800;
+      font-size: 3rem;
     }
-    .form-container .card {
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    .divider {
+      height: 2px;
+      background: #fff;
+      width: 80px;
+      margin: 20px 0;
     }
-    body{
-        margin-top: 80px;
+    .section-titles {
+      font-weight: bold;
+      text-transform: uppercase;
     }
-    /* .hero-section {
-  background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center;
-  background-size: cover;
-  height: 60vh;
-  color: white;
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .team-img {
+      max-width: 150px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    @media (max-width: 992px) {
+  .team-card h1 {
+    font-size: 2.2rem;
+  }
+  .team-card h5 {
+    font-size: 1rem;
+  }
+  .team-img {
+    max-width: 120px;
+    margin-top: 20px;
+  }
 }
 
-.lead{
+
+@media (max-width: 768px) {
+  .team-card {
+    padding: 20px;
     text-align: center;
-}
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  }
+
+  .team-card .row {
+    flex-direction: column;
+  }
+
+  .team-img {
+    max-width: 100px;
+    margin: 15px auto;
+  }
+
+  .team-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .team-card .col-md-9,
+  .team-card .col-md-3 {
+    width: 100%;
+  }
 }
 
-.hero-section .container {
-  position: relative;
-  z-index: 2;
-} */
-.contact-details-section {
-  padding: 60px 20px;
-  background-color: #f8f9fa;
-}
-
-.contact-info-form {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.contact-info div {
-  flex: 1 1 250px;
-}
-
-.inquiry-form .form-row {
-  margin-bottom: 15px;
-}
-
-.inquiry-form .two-cols {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.inquiry-form input,
-.inquiry-form select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.inquiry-form .submit {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  width: 100%;
-  cursor: pointer;
+body{
+margin-top: 80px;
 }
 
   </style>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-black fixed-top">
+<nav class="navbar navbar-dark  bg-dark fixed-top">
   <div class="container-fluid">
     
     <!-- Logo -->
@@ -154,13 +133,13 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link  active" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="project.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  active" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -168,68 +147,94 @@
 
   </div>
 </nav>
-
-<!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Contact Us</h1>
-      <p class="lead">We’re here to help you with all your real estate inquiries</p>
-    </div>
-  </section>
-  <!-- Contact Form -->
-<div class="contact-details-section">
-  <div class="contact-info-form">
-    
-    <div class="contact-info">
-      <div>
-        <small>LOCATION</small>
-        <h2>Office 81262, Al Qusais, Dubai, UAE</h2>
-      </div>
-      <div>
-        <small>PHONE</small>
-        <h2>+971508364706</h2>
-      </div>
-      <div>
-        <small>EMAIL</small>
-        <h2>amir@highgainrealestate.com</h2>
-      </div>
-    </div>
-
-    <form class="inquiry-form" action="https://formsubmit.co/amir@highgainrealestate.com" method="POST">
-      <!-- Hidden Fields -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Inquiry Form Submission">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://highgainrealestate.com/thankyou.html">
-
-      <!-- Full Name -->
-      <div class="form-row">
-        <input type="text" name="full_name" placeholder="Full name*" required />
-      </div>
-
-      <!-- Phone -->
-      <div class="form-row">
-        <input type="tel" name="phone" placeholder="Phone Number*" required />
-      </div>
-
-      <!-- Email & Best Time -->
-      <div class="form-row two-cols">
-        <input type="email" name="email" placeholder="Email*" required />
-        <select name="best_time" required>
-          <option disabled selected>Best time to call *</option>
-          <option>Morning</option>
-          <option>Afternoon</option>
-          <option>Evening</option>
-        </select>
-      </div>
-
-      <!-- Submit -->
-      <button type="submit" class="submit">SUBMIT</button>
-    </form>
-
+<!-- Hero Section: About Us -->
+<section class="hero-about-section py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">About Us</h1>
+    <p class="lead mt-3 mx-auto" style="max-width: 700px;">
+      Discover who we are, what we stand for, and how we’re redefining the real estate experience in the Dubai and beyond.
+    </p>
   </div>
-</div>
+</section>
 
+<div class="container py-5">
+  <!-- Amirthalingam -->
+  <div class="team-card">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+        <h1>AMIRTHALINGAM</h1>
+        <h5 class="text-uppercase">Partner & Managing Director</h5>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="section-titles">Years of Experience</h6>
+            <p>ME Degree holder. 20+ years engineering field experience along with real estate experience. 16+ years Gulf experience. Handled senior level positions in ETA & DCE.</p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="section-titles">Business</h6>
+            <p>Owning ARK shipping & logistics services</p>
+            <h6 class="section-titles">Personal</h6>
+            <p>Set challenging goals and achieved those goals through persistence, dedication, and commitment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="image/founder.jpg" alt="Amirthalingam" class="img-fluid team-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Suresh Kumar -->
+  <div class="team-card">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+        <h1>SURESH KUMAR</h1>
+        <h5 class="text-uppercase">Partner & General Manager</h5>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="section-titles">Years of Experience</h6>
+            <p>20+ years engineering field experience along with real estate experience. 16+ years Gulf experience. Handled senior level positions in client-based companies: Sobha, Damac, JLW.</p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="section-titles">Business</h6>
+            <p>Established M/s. Eplus EMC MEP company since 2015.</p>
+            <h6 class="section-titles">Personal</h6>
+            <p>Team Player & Leader, positive attitude, competitive, excellent communication skills, and crisis management. Thrive under pressure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="image/vice.jpg" alt="Suresh Kumar" class="img-fluid team-img rounded-circle">
+      </div>
+    </div>
+  </div>
+
+  <!-- Jayanthi -->
+  <div class="team-card">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+        <h1>JAYANTHI</h1>
+        <h5 class="text-uppercase">Vice President</h5>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="section-titles">Years of Experience</h6>
+            <p>18+ years engineering field experience along with real estate experience. 15+ years Gulf experience. Handled senior level positions in ETA, Al Hamad, Electrofos & EPLUS EMC.</p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="section-titles">Personal</h6>
+            <p>Positive attitude, hard worker, go-getter, competitive, and has good communication skills.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-3 text-center">
+        <img src="d679ce9a-ca05-472d-8fb6-fc777b47433f.png" alt="Jayanthi" class="img-fluid team-img">
+      </div> -->
+    </div>
+  </div>
+
+</div>
 
 <a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
 
@@ -267,7 +272,6 @@
   </div>
 
 </footer>
-
   <!-- JS Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -287,18 +291,22 @@
 
 <!-- All your HTML here -->
 
+
 <script>
   function toggleCard(button) {
-    const moreContent = button.previousElementSibling;
-    if (moreContent.style.display === "none" || !moreContent.style.display) {
+    const cardBody = button.closest('.card-body');
+    const moreContent = cardBody.querySelector('.more-content');
+
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
       moreContent.style.display = "block";
-      button.innerText = "Read Less";
+      button.textContent = "Read Less";
     } else {
       moreContent.style.display = "none";
-      button.innerText = "Read More";
+      button.textContent = "Read More";
     }
   }
 </script>
+
 
 <!-- Scripts at end of body -->
 <script>

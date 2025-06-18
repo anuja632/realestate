@@ -182,6 +182,7 @@ html, body {
 /* Adjust dropdown z-index */
 .iti__country-list {
   z-index: 1050;
+  color: #000;
 }
 
 .offcanvas {
@@ -1036,9 +1037,9 @@ select:focus {
   
 }
 
-.footer-section {
+/* .footer-section {
   flex: 1;
-}
+} */
 
 .footer-section h4 {
   color: #F68E20;
@@ -1271,4 +1272,79 @@ select:focus {
     cursor: pointer;
     color: red;
 }
+}
+
+.btn-whatsapp,
+.btn-call {
+  background-color: #25d366; /* WhatsApp green or customize */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-call {
+  background-color: #007bff; /* Optional: different color for call */
+}
+
+    .hero-section {
+  background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center;
+  background-size: cover;
+  height: 75vh;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead{
+    text-align: center;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-about-section {
+  min-height: 75vh;
+  background: url('./../image/aboutbanner.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  /* padding: 60px 15px; */
+  position: relative;
+}
+
+.hero-about-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.hero-about-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-about-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-about-section p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 1rem auto 0;
 }
