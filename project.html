@@ -26,6 +26,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
 
   <style>
     .card-body {
@@ -47,6 +49,7 @@
     .more-content {
       display: none;
       margin-top: 10px;
+      font-family: "Roboto Condensed";
     }
 
     .card.expanded .more-content {
@@ -66,6 +69,90 @@
 body{
 margin-top: 80px;
 }
+.tabs-container {
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+       font-family: 'Playfair Display', serif;
+
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #d4af37; /* Gold underline for active tab */
+  color: #000;
+  font-weight: 600;
+}
+
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .image-grid img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .image-grid img {
+    height: 200px;
+  }
+}
+
 
   </style>
 </head>
@@ -112,8 +199,111 @@ margin-top: 80px;
 
   </div>
 </nav>
+<!-- Hero Section: Projects -->
+<section class="hero-projects-section">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Our Projects</h1>
+    <p class="lead mt-3">
+      Discover iconic developments that set new benchmarks for luxury, design, and lifestyle across Dubai and beyond.
+    </p>
+  </div>
+</section>
+
+
+<section class="quote-hero">
+  <div class="quote-container">
+    <blockquote class="styled-quote">
+      “When legacy embraces luxury, the horizon gives way to endless dreams and the sky is as limitless as sheer ambition. Every day is your perfect match — where vision meets victory, and time becomes a canvas for masterpieces. Each moment frames a lifestyle of distinction, crafted not just to exist — but to exceed. This isn’t just a residence — it’s a revelation.”
+    </blockquote>
+  </div>
+</section>
+
 
 <div class="container py-5">
+  <div class="section-heading text-center mb-5">
+  <span class="section-heading__subtitle d-block mb-2">
+    <span class="text-gradient fw-semibold"> Built for Tomorrow.</span>
+  </span>
+  <h2 class="section-heading__title">
+  Built to Inspire. Designed to Last.
+  </h2>
+</div>
+  <div class="tabs-container">
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-target="binghatti">Binghatti</button>
+    <button class="tab-btn" data-target="chelsea">Chelsea Residences by DAMAC</button>
+    <button class="tab-btn" data-target="samana">SAMANA Hills South</button>
+  </div>
+
+  <div class="tab-content active" id="binghatti">
+    <div class="image-grid">
+      <!-- Replace with your own images -->
+      <img src="image/azure.jpg" alt="Binghatti 1">
+      <img src="image/aurora.jpg" alt="Binghatti 2">
+      <img src="image/crest.jpg" alt="Binghatti 3">
+      <img src="image/img4.jpg" alt="Binghatti 4">
+      <img src="image/img5.jpg" alt="Binghatti 5">
+      <img src="image/img6.jpg" alt="Binghatti 6">
+      <img src="image/img7.jpg" alt="Binghatti 7">
+      <img src="image/img8.jpg" alt="Binghatti 8">
+      <img src="image/img9.jpg" alt="Binghatti 9">
+      <img src="image/dawn.jpg" alt="Binghatti 10">
+      <img src="image/dusk.jpg" alt="Binghatti 11">
+      <img src="image/grove.jpg" alt="Binghatti 12">
+
+    </div>
+  </div>
+
+  <div class="tab-content" id="chelsea">
+    <div class="image-grid">
+      <img src="image/img11.jpg" alt="Chelsea 1">
+      <img src="image/img12.jpg" alt="Chelsea 2">
+      <img src="image/img13.jpg" alt="Chelsea 3">
+      <img src="image/img24.jpg" alt="Chelsea 4">
+      <img src="image/img15.jpg" alt="Chelsea 5">
+      <img src="image/img29.png" alt="Chelsea 6">
+      <img src="image/img17.jpg" alt="Chelsea 7">
+      <img src="image/img18.jpg" alt="Chelsea 8">
+      <img src="image/img19.jpg" alt="Chelsea 9">
+      <img src="image/img20.jpg" alt="Chelsea 10">
+      <img src="image/img21.jpg" alt="Chelsea 11">
+      <img src="image/img22.jpg" alt="Chelsea 12">
+
+
+    </div>
+  </div>
+
+  <div class="tab-content" id="samana">
+    <div class="image-grid">
+      <img src="image/img29.jpg" alt="Samana 1">
+      <img src="image/img30.jpg" alt="Samana 2">
+      <img src="image/img31.jpg" alt="Samana 3">
+      <img src="image/img32.jpg" alt="Samana 4">
+      <img src="image/img33.jpg" alt="Samana 5">
+      <img src="image/img41.jpg" alt="Samana 6">
+      <img src="image/img35.jpg" alt="Samana 7">
+      <img src="image/img36.jpg" alt="Samana 8">
+      <img src="image/img37.jpg" alt="Samana 9">
+      <img src="image/img38.jpg" alt="Samana 10">
+      <img src="image/img39.jpg" alt="Samana 10">
+      <img src="image/img40.jpg" alt="Samana 10">
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="container py-5">
+<div class="section-heading text-center mb-5">
+  <span class="section-heading__subtitle d-block mb-2">
+    <span class="text-gradient fw-semibold">Latest Projects</span>
+  </span>
+  <h2 class="section-heading__title">
+    Crafted by Optimum Homes & Where Vision Meets Real Estate Excellence
+  </h2>
+</div>
+
   <div class="row g-4">
 
   <!-- Card 1 -->
@@ -1082,6 +1272,20 @@ margin-top: 80px;
 
     closeBtn.addEventListener("click", () => {
       offcanvas.classList.remove("open");
+    });
+  });
+</script>
+<script>
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(tc => tc.classList.remove('active'));
+
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.target).classList.add('active');
     });
   });
 </script>
