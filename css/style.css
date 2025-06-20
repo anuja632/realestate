@@ -1455,3 +1455,11 @@ select:focus {
     display: none; /* Optional: hides quotes for very small screens */
   }
 }
+@media (max-width:1080px){
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+}
+}
