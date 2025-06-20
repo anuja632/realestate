@@ -132,12 +132,12 @@ margin-top: 80px;
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-@media (min-width:769) and (max-width:1366px){
-      .card-body p{
-      width:250px
-    }
+@media (min-width: 768px) and (max-width: 1370px) {
+  .card-body p{
+    width:250px;
+  }
 }
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 912px) {
   .image-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 0.75rem;
@@ -148,6 +148,12 @@ margin-top: 80px;
   }
 }
 
+/* For below 768px */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
 @media (max-width: 480px) {
   .image-grid {
     grid-template-columns: 1fr;
@@ -314,7 +320,7 @@ margin-top: 80px;
 
   <!-- Card 1 -->
 <!-- Card 1 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/skyhall.jpg" class="card-img-top" alt="Binghatti Skyhall">
     <div class="card-body">
@@ -346,7 +352,7 @@ margin-top: 80px;
 
 
   <!-- Card 2 -->
-  <div class="col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
       <img src="image/hillview.jpg" class="card-img-top" alt="Binghatti Hillviews">
       <div class="card-body">
@@ -373,7 +379,7 @@ margin-top: 80px;
   </div>
 
   <!-- Card 3 -->
-  <div class="col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
       <img src="image/starlight.jpg" class="card-img-top" alt="Binghatti Starlight">
       <div class="card-body">
@@ -399,7 +405,7 @@ margin-top: 80px;
   </div>
 
   <!-- Card 4 -->
-  <div class="col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
       <img src="image/ruby.jpg" class="card-img-top" alt="Binghatti Ruby">
       <div class="card-body">
@@ -426,7 +432,7 @@ margin-top: 80px;
   </div>
 
   <!-- Card 5 -->
-  <div class="col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
       <img src="image/haven.jpg" class="card-img-top" alt="Binghatti Haven">
       <div class="card-body">
@@ -452,7 +458,7 @@ margin-top: 80px;
   </div>
 
   <!-- Card 6 -->
-  <div class="col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
       <img src="image/skyrise.jpg" class="card-img-top" alt="Binghatti Skyrise">
       <div class="card-body">
@@ -478,7 +484,7 @@ margin-top: 80px;
     </div>
   </div>
 <!-- Card 7 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/ghost.jpg" class="card-img-top" alt="Binghatti Ghost">
     <div class="card-body">
@@ -505,7 +511,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 8 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/ivory.jpg" class="card-img-top" alt="Binghatti Ivory">
     <div class="card-body">
@@ -532,7 +538,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 9 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/grove.jpg" class="card-img-top" alt="Binghatti Grove">
     <div class="card-body">
@@ -558,7 +564,7 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 10 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/dawn.jpg" class="card-img-top" alt="Dawn by Binghatti">
     <div class="card-body">
@@ -585,7 +591,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 11 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/royale.jpg" class="card-img-top" alt="Binghatti Royale">
     <div class="card-body">
@@ -612,7 +618,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 12 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/dusk.jpg" class="card-img-top" alt="Dusk by Binghatti">
     <div class="card-body">
@@ -639,7 +645,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 13 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/one.jpg" class="card-img-top" alt="One by Binghatti">
     <div class="card-body">
@@ -665,12 +671,12 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 14 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/hills.jpg" class="card-img-top" alt="Binghatti Hills">
     <div class="card-body">
       <h5 class="card-title">Binghatti Hills</h5>
-      <p>Inspired by natural terrain contours, Binghatti Hills captures the ambiance of rolling hillsides.</p>
+      <p>Inspired by natural terrain contours, Binghatti Hills captures the ambiance.</p>
       <div class="more-content" style="display: none;">
         <p><strong>Property Type:</strong> Residential & Retail</p>
         <p><strong>Location:</strong> Dubai Science Park</p>
@@ -691,7 +697,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 15 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/trillionarie.jpg" class="card-img-top" alt="Trillionaire Residences by Binghatti">
     <div class="card-body">
@@ -718,7 +724,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 16 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/phantom.jpg" class="card-img-top" alt="Binghatti Phantom">
     <div class="card-body">
@@ -745,7 +751,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 17 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/aurora.jpg" class="card-img-top" alt="Binghatti Aurora">
     <div class="card-body">
@@ -772,7 +778,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 18 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/onyx.jpg" class="card-img-top" alt="Binghatti Onyx">
     <div class="card-body">
@@ -798,7 +804,7 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 19 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/onyx.jpg" class="card-img-top" alt="Binghatti Amber">
     <div class="card-body">
@@ -825,7 +831,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 20 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/venus.jpg" class="card-img-top" alt="Binghatti Venus">
     <div class="card-body">
@@ -852,7 +858,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 21 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/lavendar.jpg" class="card-img-top" alt="Binghatti Lavender">
     <div class="card-body">
@@ -879,7 +885,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 22 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/gardenia.jpg" class="card-img-top" alt="Binghatti Gardenia">
     <div class="card-body">
@@ -905,7 +911,7 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 23 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/azure.jpg" class="card-img-top" alt="Binghatti Azure">
     <div class="card-body">
@@ -932,7 +938,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 24 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/tulip.jpg" class="card-img-top" alt="Binghatti Tulip">
     <div class="card-body">
@@ -959,7 +965,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 25 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/house.jpg" class="card-img-top" alt="Binghatti House">
     <div class="card-body">
@@ -985,7 +991,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 26 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/canal.jpg" class="card-img-top" alt="Binghatti Canal">
     <div class="card-body">
@@ -1010,7 +1016,7 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 27 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/greek.jpg" class="card-img-top" alt="Binghatti Creek">
     <div class="card-body">
@@ -1036,7 +1042,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 28 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/corner.jpg" class="card-img-top" alt="Binghatti Corner">
     <div class="card-body">
@@ -1062,7 +1068,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 29 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/emerald.jpg" class="card-img-top" alt="Binghatti Emerald">
     <div class="card-body">
@@ -1089,7 +1095,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 30 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/heights.jpg" class="card-img-top" alt="Binghatti Heights">
     <div class="card-body">
@@ -1115,7 +1121,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 31 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/crescent.jpg" class="card-img-top" alt="Binghatti Crescent">
     <div class="card-body">
@@ -1140,12 +1146,12 @@ margin-top: 80px;
   </div>
 </div>
 <!-- Card 32 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <img src="image/crest.jpg" class="card-img-top" alt="Binghatti Crest">
     <div class="card-body">
       <h5 class="card-title">Binghatti Crest</h5>
-      <p>A high-concept masterpiece, Binghatti Crest defies conventions with dimensional depth...</p>
+      <p>A high-concept masterpiece, Binghatti Crest defies conventions with dimensional...</p>
       <div class="more-content" style="display: none;">
         <p><strong>Property Type:</strong> Residential & Commercial</p>
         <p><strong>Location:</strong> Jumeirah Village Circle</p>
@@ -1166,7 +1172,7 @@ margin-top: 80px;
 </div>
 
 <!-- Card 33 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4  hide-mobile">
   <div class="card">
     <img src="image/luna.jpg" class="card-img-top" alt="Binghatti Luna">
     <div class="card-body">
