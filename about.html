@@ -593,7 +593,42 @@ margin-top: 80px;
 </div>
 
 
+<!-- Pop-up Form -->
 
+<div id="popupForm" class="popup-form">
+  <div class="form-container">
+    <buttons class="close-btn" onclick="closeForm()">&times;</buttons>
+    
+    <div class="popup-content">
+      <img src="image/contact.png"
+           alt="Customer Support" loading="lazy" />
+      
+      <form action="https://formsubmit.co/amir@highgainrealestate.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Inquiry Form Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://highgainrealestate.com/thankyou.html">
+
+        <input type="text" name="full_name" placeholder="Full name*" required />
+
+        <input type="tel" name="phone" placeholder="Phone Number*" required />
+
+        <input type="email" name="email" placeholder="Email*" required />
+
+        <select name="best_time" required>
+          <option disabled selected>Best time to call *</option>
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+        </select>
+
+
+
+        <button type="submit" class="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 <a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
 
