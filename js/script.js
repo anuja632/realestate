@@ -27,12 +27,12 @@
   //   openForm();
   // }, 10000); // 10,000 milliseconds = 10 seconds
 
-  // Open popup
-  function openForm() {
-    document.getElementById('popupForm').style.display = 'flex';
-  }
+  // // Open popup
+  // function openForm() {
+  //   document.getElementById('popupForm').style.display = 'flex';
+  // }
 
-  // Close popup
-  function closeForm() {
-    document.getElementById('popupForm').style.display = 'none';
-  }
+  // // Close popup
+  // function closeForm() {
+  //   document.getElementById('popupForm').style.display = 'none';
+  // }
