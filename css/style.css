@@ -89,9 +89,9 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     line-height: inherit;
 
 }
-h1, h2, h3, h4 {
-font-family: 'Pacifico';}
-a{
+h1, h2, h3, h4,h5,h6 {
+font-family: 'Dancing Script', cursive;
+}a{
     text-decoration: none;;
 }
 /* Base Styles
@@ -106,9 +106,9 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-   /* font-family: 'Playfair Display', serif; */
+   font-family: 'Playfair Display';
   background-color: #f8f9fa;
-    font-family: var(--body-font);
+    /* font-family: var(--body-font); */
 
 }
 
@@ -465,8 +465,9 @@ label {
 }
 p{
     text-align: justify;
-      font-family: var(--inter-font);
-
+/* font-family: 'Cormorant Garamond', serif; */
+/* font-family: 'Great Vibes'; */
+ /* font-family: var(--inter-font); */
 }
 
 
@@ -1434,9 +1435,9 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-    font-family: var(--dmsans-font);
+    /* font-family: var(--dmsans-font); */
 
-     /* font-family: 'Playfair Display', serif; */
+     font-family: 'Playfair Display';
 }
 
 .quote-container {
