@@ -15,24 +15,24 @@
 
 
 
-  // // Show the popup for the first time after 3 seconds
-  // window.addEventListener('load', () => {
-  //   setTimeout(() => {
-  //     openForm();
-  //   }, 3000);
-  // });
+  // Show the popup for the first time after 3 seconds
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      openForm();
+    }, 3000);
+  });
 
-  // // Re-show the popup every 10 seconds
-  // setInterval(() => {
-  //   openForm();
-  // }, 10000); // 10,000 milliseconds = 10 seconds
+  // Re-show the popup every 10 seconds
+  setInterval(() => {
+    openForm();
+  }, 10000); // 10,000 milliseconds = 10 seconds
 
-  // // Open popup
-  // function openForm() {
-  //   document.getElementById('popupForm').style.display = 'flex';
-  // }
+  // Open popup
+  function openForm() {
+    document.getElementById('popupForm').style.display = 'flex';
+  }
 
-  // // Close popup
-  // function closeForm() {
-  //   document.getElementById('popupForm').style.display = 'none';
-  // }
+  // Close popup
+  function closeForm() {
+    document.getElementById('popupForm').style.display = 'none';
+  }
