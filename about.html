@@ -38,10 +38,12 @@
 
   <style>
 h1, h2, h3, h4,h5,h6 {
-font-family: 'Dancing Script', cursive;
-color:#000;
+ font-family: 'Playfair Display';
+
+/* color:#000; */
 font-weight: bold;
 }
+
     .team-card {
       /* background-color: #1c1c1c; */
       border: none;
@@ -117,15 +119,174 @@ font-weight: bold;
 }
 
 .card {
+  position: relative; /* Needed for z-index to work inside */
   background: #fff;
   border-left: 5px solid #d4af37;
   padding: 1rem;
   border-radius: 8px;
+  color:white;
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Ensure content stacks vertically */
+  align-items: flex-start;
   gap: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
+  z-index: 1;
+    overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutimg1{
+  background-image: url("https://img.freepik.com/free-photo/person-looking-futuristic-mystical-other-worldly-sky_23-2150946783.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg2{
+  background-image: url("https://img.freepik.com/free-photo/lifestyle-business-woman-feel-happy-jumping-air-celebrating-success_1150-15604.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg3{
+  background-image: url("https://img.freepik.com/free-photo/water-famous-architecture-finance-shanghai-tower_1417-1120.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg4{
+  background-image: url("https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg5{
+  background-image: url("https://img.freepik.com/free-photo/medium-shot-people-travel-agency_52683-136434.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg6{
+  background-image: url("https://img.freepik.com/free-photo/portrait-woman-visiting-luxurious-city-dubai_23-2151328516.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg7{
+  background-image: url("https://img.freepik.com/free-photo/closeup-shot-male-hand-holding-crystal-ball-with-reflection-city_181624-7209.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg8{
+  background-image: url("https://img.freepik.com/free-photo/front-view-businessman-spilling-shopping-cart-coins_23-2148569081.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg9{
+  background-image: url("https://img.freepik.com/free-photo/skyscrapers-sunset_1112-1870.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg10{
+  background-image: url("https://img.freepik.com/free-photo/futuristic-technology-concept_23-2151908103.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg11{
+  background-image: url("https://img.freepik.com/free-photo/executive-with-tablet-buildings-background_1134-579.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg12{
+  background-image: url("https://img.freepik.com/free-photo/house-loan-estate-sell-mortgage-concept_53876-125098.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg13{
+  background-image: url("https://img.freepik.com/free-photo/view-from-balcony-apartment_188544-12685.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg14{
+  background-image: url("https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305400.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg15{
+  background-image: url("https://img.freepik.com/free-photo/future-visions-business-technology-concept_23-2151893445.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+/* .aboutimg21 {
+  background-image: url("https://img.freepik.com/free-photo/person-looking-futuristic-mystical-other-worldly-sky_23-2150946783.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+
+.carde {
+  position: relative;
+  background: #fff;
+  border-left: 5px solid #d4af37;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutimg21 {
+  background-image: url('https://img.freepik.com/free-photo/top-view-green-card-application_23-2149601368.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740');
+}
+.aboutimg22 {
+  background-image: url('https://img.freepik.com/free-photo/portrait-woman-visiting-luxurious-city-dubai_23-2151328531.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg23 {
+  background-image: url('https://img.freepik.com/free-photo/modetn-city-luxury-center-dubai-united-arab-emirates_231208-7596.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg24 {
+  background-image: url('https://img.freepik.com/free-photo/islamic-family-couch-full-shot_23-2149887085.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg25 {
+  background-image: url('https://img.freepik.com/free-photo/man-saving-money-energy-crisis_23-2150061852.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg26 {
+  background-image: url('https://img.freepik.com/free-photo/low-angle-view-man-city_23-2148296604.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg27 {
+  background-image: url('https://img.freepik.com/free-photo/business-partners-team-walking-down-discussing-work_1150-3029.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg28 {
+  background-image: url('https://img.freepik.com/free-photo/full-shot-woman-working-laptop_23-2149046392.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg29 {
+  background-image: url('https://img.freepik.com/free-photo/portrait-smiling-woman-showing-air-ticket-passport_23-2148203108.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg30 {
+  background-image: url('https://img.freepik.com/free-photo/person-taking-driver-s-license-exam_23-2149891381.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+
+.aboutimg31 {
+  background-image: url('https://img.freepik.com/free-photo/top-view-green-card-application_23-2149601368.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740');
+}
+.aboutimg32 {
+  background-image: url('https://img.freepik.com/free-photo/crop-doctor-with-cardiogram_23-2147763827.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg33 {
+  background-image: url('https://img.freepik.com/free-photo/pair-happy-students-gown-looking-globe-white_114579-53808.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg34 {
+  background-image: url('https://img.freepik.com/free-vector/realistic-luxurious-vip-card-template_23-2149121588.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg35 {
+  background-image: url('https://img.freepik.com/free-photo/girl-night-with-phone_1157-16842.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg36 {
+  background-image: url('https://img.freepik.com/free-photo/couple-dancing-by-pool-vacation_23-2149369707.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg37 {
+  background-image: url('https://img.freepik.com/free-photo/portrait-woman-visiting-luxurious-city-dubai_23-2151328515.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.aboutimg38 {
+  background-image: url('https://img.freepik.com/free-photo/businessman-giving-his-passport-airline-check-waiting-area_107420-85106.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Optional: darken for text visibility */
+  z-index: 0;
+}
+.carde img {
+  filter: brightness(0) invert(1);
+}
+.carde img,
+.carde .title,
+.carde .description {
+  z-index: 1;
 }
 
 /* Medium screens: tablets (≤ 768px) */
@@ -160,12 +321,9 @@ font-weight: bold;
   }
 }
 
-
-
 body{
 margin-top: 80px;
 }
-
   </style>
 </head>
 <body>
@@ -214,7 +372,7 @@ margin-top: 80px;
 <!-- Hero Section: About Us -->
 <section class="hero-about-section py-5 bg-primary text-white text-center">
   <div class="container">
-    <h1 class="display-4 fw-bold text-white" >About Us</h1>
+    <h1 class="display-4 fw-bold text-white" >About</h1>
     <p class="lead mt-3 mx-auto" style="max-width: 700px;">
       Discover who we are, what we stand for, and how we’re redefining the real estate experience in the Dubai and beyond.
     </p>
@@ -252,25 +410,17 @@ margin-top: 80px;
 </div>
 
 
-<div class="container py-5">
+<!-- <div class="container py-5">
   <div class="row text-center">
           <h1>Team Members</h1>
 
-    <!-- Amirthalingam -->
-    <!-- <div class="col-md-4 mb-4">
-      <img src="image/founder.jpg" alt="Amirthalingam" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
-      <h4 class="mb-1">AMIRTHALINGAM</h4>
-      <p class="text-uppercase text-muted text-center">Partner & Managing Director</p>
-    </div> -->
 
-    <!-- Suresh Kumar -->
     <div class="col-md-4 mb-4">
       <img src="image/vice.jpg" alt="Suresh Kumar" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
       <h4 class="mb-1">SURESH KUMAR</h4>
       <p class="text-uppercase text-muted  text-center">Partner & General Manager</p>
     </div>
 
-    <!-- Jayanthi -->
     <div class="col-md-4 mb-4">
       <img src="image/jayanthi.jpg" alt="Jayanthi" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
       <h4 class="mb-1">JAYANTHI</h4>
@@ -278,7 +428,7 @@ margin-top: 80px;
     </div>
 
   </div>
-</div>
+</div> -->
 
 
 </div>
@@ -291,21 +441,26 @@ margin-top: 80px;
       <p class="text-center">Top reasons investors choose Dubai as their prime destination.</p>
     </div>
     <!-- Cards -->
-    <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
-          <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-chart-line fa-lg text-danger me-3"></i>
-            <h5 class="mb-0">High Rental Yields</h5>
-          </div>
-          <p class="text-truncate-multiline">Dubai offers some of the highest rental returns globally, often exceeding 7% annually.</p>
-        </div>
+<div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
+  <div class="card shadow-sm border-0 h-100 aboutimg1">
+    <div class="overlay"></div> <!-- This stays behind -->
+    <div class="card-body position-relative" style="z-index: 1;">
+      <div class="d-flex align-items-center mb-2">
+        <i class="fas fa-chart-line fa-lg text-danger me-3"></i>
+        <h5 class="mb-0">High Rental Yields</h5>
       </div>
+      <p class="text-truncate-multiline">
+        Dubai offers some of the highest rental returns globally, often exceeding 7% annually.
+      </p>
     </div>
+  </div>
+</div>
+
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg2">
+            <div class="overlay"></div> <!-- This stays behind -->
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-heart fa-lg text-danger me-3"></i>
             <h5 class="mb-0">Quality of Life</h5>
@@ -316,10 +471,12 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg3">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-city fa-lg text-secondary me-3"></i>
+            <i class="fas fa-city fa-lg text-primary me-3"></i>
             <h5 class="mb-0">World-Class Infrastructure</h5>
           </div>
           <p class="text-truncate-multiline">Dubai is known for its advanced roadways, public transport, and iconic skyscrapers.</p>
@@ -328,8 +485,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg4">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;"> 
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-percent fa-lg text-success me-3"></i>
             <h5 class="mb-0">Favorable Tax Environment</h5>
@@ -340,8 +499,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg5">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-id-card fa-lg text-warning me-3"></i>
             <h5 class="mb-0">Golden Visa Opportunities</h5>
@@ -352,8 +513,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg6">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-plane fa-lg text-info me-3"></i>
             <h5 class="mb-0">Robust Tourism Industry</h5>
@@ -364,8 +527,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg7">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-rocket fa-lg text-danger me-3"></i>
             <h5 class="mb-0">Booming Economy</h5>
@@ -376,10 +541,12 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg8">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-balance-scale fa-lg text-dark me-3"></i>
+            <i class="fas fa-balance-scale fa-lg text-primary me-3"></i>
             <h5 class="mb-0">Economic Stability</h5>
           </div>
           <p class="text-truncate-multiline">Dubai's stable political climate and currency attract both regional and international investors.</p>
@@ -388,10 +555,12 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg9">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-layer-group fa-lg text-secondary me-3"></i>
+            <i class="fas fa-layer-group fa-lg text-success me-3"></i>
             <h5 class="mb-0">Multiple Investment Options</h5>
           </div>
           <p class="text-truncate-multiline">Choose from residential, commercial, off-plan, or ready-to-move properties across prime locations.</p>
@@ -400,8 +569,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg10">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-shield-alt fa-lg text-success me-3"></i>
             <h5 class="mb-0">Safe and Stable City</h5>
@@ -412,8 +583,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg11">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-gavel fa-lg text-danger me-3"></i>
             <h5 class="mb-0">Regulated Market</h5>
@@ -424,8 +597,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg12">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-coins fa-lg text-warning me-3"></i>
             <h5 class="mb-0">Tax-Free Investment</h5>
@@ -436,8 +611,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg13">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-gem fa-lg text-danger me-3"></i>
             <h5 class="mb-0">Valuable Properties</h5>
@@ -448,8 +625,10 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg14">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
             <i class="fas fa-chart-pie fa-lg text-info me-3"></i>
             <h5 class="mb-0">Economic Growth</h5>
@@ -460,10 +639,12 @@ margin-top: 80px;
     </div>
 
     <div class="col-xl-4 col-md-6 col-sm-12" data-aos="fade-up">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body">
+      <div class="card shadow-sm border-0 h-100 aboutimg15">
+            <div class="overlay"></div> <!-- This stays behind -->
+
+        <div class="card-body  position-relative" style="z-index: 1;">
           <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-key fa-lg text-dark me-3"></i>
+            <i class="fas fa-key fa-lg text-danger me-3"></i>
             <h5 class="mb-0">Freehold Ownership</h5>
           </div>
           <p class="text-truncate-multiline">Foreigners can own properties outright in designated areas, providing full control and resale rights.</p>
@@ -535,16 +716,19 @@ margin-top: 80px;
 
     <!-- 1 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up">
-      <div class="card text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Residency Icon" width="24" loading="lazy" />
-        <div class="title">10-Year Residency</div>
-        <div class="description">Live in the UAE for 10 years<br>with a renewable residency permit.</div>
+      <div class="carde text-center aboutimg21"  >
+          <div class="overlay"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Residency Icon" width="24" loading="lazy"  />
+        <div class="title text-white text-center ">10-Year Residency</div>
+        <div class="description text-center">Live in the UAE for 10 years<br>with a renewable residency permit.</div>
       </div>
     </div>
 
     <!-- 2 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg22">
+          <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Travel Icon" width="24" loading="lazy" />
         <div class="title">Visa-Free Travel</div>
         <div class="description">Travel easily to many countries<br>with visa-free or visa-on-arrival access.</div>
@@ -553,7 +737,9 @@ margin-top: 80px;
 
     <!-- 3 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg23">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/2084/2084377.png" alt="Real Estate Icon" width="24" loading="lazy" />
         <div class="title">Real Estate Investment</div>
         <div class="description">Invest in top properties<br>with full ownership rights.</div>
@@ -562,7 +748,9 @@ margin-top: 80px;
 
     <!-- 4 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg24">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/892/892781.png" alt="Family Icon" width="24" loading="lazy" />
         <div class="title">Family Sponsorship</div>
         <div class="description">Easily sponsor your spouse,<br>children, and domestic workers.</div>
@@ -571,7 +759,9 @@ margin-top: 80px;
 
     <!-- 5 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg25">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Tax Icon" width="24" loading="lazy" />
         <div class="title">No Income Tax</div>
         <div class="description">Keep your full income earnings<br>with zero personal taxes.</div>
@@ -580,7 +770,9 @@ margin-top: 80px;
 
     <!-- 6 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg26">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/1792/1792137.png" alt="Corporate Tax Icon" width="24" loading="lazy" />
         <div class="title">No Corporate Tax</div>
         <div class="description">Set up in UAE free zones<br>and enjoy tax exemptions.</div>
@@ -589,7 +781,9 @@ margin-top: 80px;
 
     <!-- 7 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg27">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/1149/1149168.png" alt="Jobs Icon" width="24" loading="lazy" />
         <div class="title">Career Opportunities</div>
         <div class="description">Unlock jobs and business options<br>in a thriving economy.</div>
@@ -598,7 +792,9 @@ margin-top: 80px;
 
     <!-- 8 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg28">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/3043/3043577.png" alt="Nomad Icon" width="24" loading="lazy" />
         <div class="title">Digital Nomad Visa</div>
         <div class="description">Work remotely in the UAE<br>under the nomad visa scheme.</div>
@@ -607,7 +803,9 @@ margin-top: 80px;
 
     <!-- 9 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg29">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/1946/1946433.png" alt="Dependents Icon" width="24" loading="lazy" />
         <div class="title">Residency for Dependents</div>
         <div class="description">Grant UAE residency to<br>your children and family members.</div>
@@ -616,7 +814,9 @@ margin-top: 80px;
 
     <!-- 10 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="450">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg30">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Visa Icon" width="24" loading="lazy" />
         <div class="title">Multiple Entry Visa</div>
         <div class="description">Enter and exit UAE easily<br>with multiple visa entries.</div>
@@ -625,7 +825,9 @@ margin-top: 80px;
 
     <!-- 11 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg31">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="License Icon" width="24" loading="lazy" />
         <div class="title">Driver’s License</div>
         <div class="description">Get your UAE license faster<br>with simplified procedures.</div>
@@ -634,7 +836,9 @@ margin-top: 80px;
 
     <!-- 12 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="550">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg32">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Healthcare Icon" width="24" loading="lazy" />
         <div class="title">Discounted Healthcare</div>
         <div class="description">Access world-class hospitals<br>at reduced medical costs.</div>
@@ -643,7 +847,9 @@ margin-top: 80px;
 
     <!-- 13 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg33">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Education Icon" width="24" loading="lazy" />
         <div class="title">Education Discounts</div>
         <div class="description">Enjoy top school education<br>with fee reduction benefits.</div>
@@ -652,7 +858,9 @@ margin-top: 80px;
 
     <!-- 14 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="650">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg34">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Privilege Card Icon" width="24" loading="lazy" />
         <div class="title">Esaad Privilege Card</div>
         <div class="description">Receive exclusive discounts<br>via your Esaad membership.</div>
@@ -661,7 +869,9 @@ margin-top: 80px;
 
     <!-- 15 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg35">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Safety Icon" width="24" loading="lazy" />
         <div class="title">Live Safely</div>
         <div class="description">Feel secure every day<br>in one of the world’s safest cities.</div>
@@ -670,7 +880,9 @@ margin-top: 80px;
 
     <!-- 16 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="750">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg36">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/706/706173.png" alt="Leisure Icon" width="24" loading="lazy" />
         <div class="title">Leisure & Lifestyle</div>
         <div class="description">Indulge in luxury shopping,<br>beaches, and fine dining.</div>
@@ -679,8 +891,10 @@ margin-top: 80px;
 
     <!-- 17 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
-      <div class="card text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Citizenship Icon" width="24" loading="lazy" />
+      <div class="carde text-center aboutimg37">
+                  <div class="overlay"></div>
+
+<img src="https://www.svgrepo.com/show/308782/passport-id-identification-citizenship.svg" alt="Citizenship Icon" width="24" loading="lazy" />
         <div class="title">Path to Citizenship</div>
         <div class="description">Earn UAE nationality through<br>investment or outstanding merit.</div>
       </div>
@@ -688,7 +902,9 @@ margin-top: 80px;
 
     <!-- 18 -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="850">
-      <div class="card text-center">
+      <div class="carde text-center aboutimg38">
+                  <div class="overlay"></div>
+
         <img src="https://cdn-icons-png.flaticon.com/512/2897/2897900.png" alt="Airport Icon" width="24" loading="lazy" />
         <div class="title">VIP Airport Services</div>
         <div class="description">Skip the lines with lounges<br>and priority immigration access.</div>

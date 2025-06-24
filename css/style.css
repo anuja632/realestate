@@ -90,7 +90,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 
 }
 h1, h2, h3, h4,h5,h6 {
-font-family: 'Dancing Script', cursive;
+ font-family: 'Playfair Display'
 }a{
     text-decoration: none;;
 }
@@ -1474,6 +1474,54 @@ select:focus {
   color: #d4af37;
 }
 
+.aboutimg1{
+  background-image: url("https://img.freepik.com/free-photo/person-looking-futuristic-mystical-other-worldly-sky_23-2150946783.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg2{
+  background-image: url("https://img.freepik.com/free-photo/lifestyle-business-woman-feel-happy-jumping-air-celebrating-success_1150-15604.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg3{
+  background-image: url("https://img.freepik.com/free-photo/water-famous-architecture-finance-shanghai-tower_1417-1120.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+
+.aboutimg4{
+  background-image: url("https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg5{
+  background-image: url("https://img.freepik.com/free-photo/medium-shot-people-travel-agency_52683-136434.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg6{
+  background-image: url("https://img.freepik.com/free-photo/portrait-woman-visiting-luxurious-city-dubai_23-2151328516.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg7{
+  background-image: url("https://img.freepik.com/free-photo/closeup-shot-male-hand-holding-crystal-ball-with-reflection-city_181624-7209.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg8{
+  background-image: url("https://img.freepik.com/free-photo/front-view-businessman-spilling-shopping-cart-coins_23-2148569081.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg9{
+  background-image: url("https://img.freepik.com/free-photo/skyscrapers-sunset_1112-1870.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg10{
+  background-image: url("https://img.freepik.com/free-photo/futuristic-technology-concept_23-2151908103.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg11{
+  background-image: url("https://img.freepik.com/free-photo/executive-with-tablet-buildings-background_1134-579.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg12{
+  background-image: url("https://img.freepik.com/free-photo/house-loan-estate-sell-mortgage-concept_53876-125098.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg13{
+  background-image: url("https://img.freepik.com/free-photo/view-from-balcony-apartment_188544-12685.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg14{
+  background-image: url("https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305400.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
+.aboutimg15{
+  background-image: url("https://img.freepik.com/free-photo/future-visions-business-technology-concept_23-2151893445.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740");
+}
 
 /* Unique backgrounds */
 .facility-car-parking {background-image: url('https://img.freepik.com/free-photo/car-park_1203-3451.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');}

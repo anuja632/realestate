@@ -19,7 +19,7 @@
   // window.addEventListener('load', () => {
   //   setTimeout(() => {
   //     openForm();
-  //   }, 3000);
+  //   }, 10000);
   // });
 
   // // Re-show the popup every 10 seconds
