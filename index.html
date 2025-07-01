@@ -54,6 +54,40 @@
     top:0px;
     left:0px;
   }
+  
+    .trusted-section h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .logo-grid img {
+      max-height: 350px;
+      width:auto;
+      /* filter: grayscale(100%); */
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .logo-grid img:hover {
+      filter: none;
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    /* @media (max-width: 600px) {
+      .logo-grid img {
+        max-height: 40px;
+      }
+    } */
 </style>
 
 </head>
@@ -764,7 +798,25 @@
 </section>
 <a href="project.html" class="submit btn-lg text-white d-block mx-auto text-center mt-5" >View Project</a>
 </div>
+ <!-- Trusted by Section -->
 
+  <section class="trusted-section mt-5">
+    <h2 class="text-center section-heading__title">Proud partners of industry leaders</h2>
+    <div class="logo-grid">
+      <img src="image/trust1.jpg" alt="Google">
+      <img src="image/trust2.jpg" alt="Microsoft">
+      <img src="image/trust3.jpg" alt="Adobe">
+      <img src="image/trust4.jpg" alt="Amazon">
+      <img src="image/trust5.jpg" alt="IBM">
+      <!-- <img src="image/trust6.jpg" alt="Intel">
+      <img src="image/trust7.jpg" alt="Intel">
+      <img src="image/trust8.jpg" alt="Intel">
+      <img src="image/trust9.jpg" alt="Intel"> -->
+
+
+
+    </div>
+  </section>
 <div class="section-heading text-center mt-5" >
   <span class="section-heading__subtitle">
     <span class="text-gradient fw-semibold">Contact Us</span>
